@@ -1,5 +1,5 @@
 .mobil {
-    display: none;
+    
     position: fixed;
     background-color: #ffffff;
     top: 0;
@@ -8,10 +8,19 @@
     height: 100vh;
     padding-top: 21px;
     padding-right: 21px;
+    opacity: 1;
+
+
 
     @include tablet {
         display: none;
     }
+}
+
+.mobil.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: collapse;
 }
 
 

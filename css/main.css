@@ -1136,7 +1136,6 @@ img {
 }
 
 .mobil {
-  display: none;
   position: fixed;
   background-color: #ffffff;
   top: 0;
@@ -1145,11 +1144,18 @@ img {
   height: 100vh;
   padding-top: 21px;
   padding-right: 21px;
+  opacity: 1;
 }
 @media screen and (min-width: 768px) {
   .mobil {
     display: none;
   }
+}
+
+.mobil.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: collapse;
 }
 
 .mobil__button {
