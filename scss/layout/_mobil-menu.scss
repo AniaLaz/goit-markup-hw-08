@@ -1,0 +1,131 @@
+.mobil {
+    display: none;
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 21px;
+    padding-right: 21px;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+
+.mobil__button {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.mobil-container {
+    padding-left: 40px;
+}
+
+.mob-menu {
+    margin-bottom: 302px;
+}
+
+
+.mob-menu__link {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--nav-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.mob-menu__item {
+    position: relative;
+
+}
+
+.mob-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob-contact__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+
+
+.mob-menu__link:hover,
+.mob-menu__link:focus,
+.mob-contact__our:hover,
+.mob-contact__our:focus {
+    color: var(--accent-color);
+}
+
+.mob-contact__our {
+    display: block;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    fill: var(--text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-contact__our.tel {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+
+.mob-contact__our.mail {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.mob-menu__link.link.current {
+    color: var(--accent-color);
+}
+
+.mob-contact {
+    margin-bottom: 64px;
+}
+
+
+.social-networks {
+    display: flex;
+}
+
+.social-networks__item {
+    padding: 0 10px;
+}
+
+.social-networks__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.social-networks__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+}

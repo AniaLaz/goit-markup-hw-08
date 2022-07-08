@@ -1,0 +1,73 @@
+.hero {
+    background-color: var(--background-accent-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/Img-heroy.jpg");
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    // @include tablet {
+    //     @media screen and (min-width:480px) {
+    //         padding-left: 60px;
+    //         padding-right: 60px;
+    //     }
+    // }
+
+    // @include desktop {
+    //     @media screen and (min-width:480px) {
+    //         padding-left: 204px;
+    //         padding-right: 204px;
+    //     }
+    // }
+}
+
+
+.hero-title {
+    margin-bottom: 30px;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'Roboto', san-serif;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent-second-color);
+
+
+    @include desktop {
+        @media screen and (min-width:1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
+        }
+    }
+}
+
+
+.hero-button {
+    margin: 0 auto;
+    padding: 10px 32px;
+
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--accent-second-color);
+    background: var(--accent-color);
+}
