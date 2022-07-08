@@ -258,6 +258,11 @@ img {
   background-color: transparent;
   border: none;
 }
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
 
 .hero {
   background-color: var(--background-accent-color);
@@ -1142,9 +1147,10 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
+  opacity: 1;
   padding-top: 21px;
   padding-right: 21px;
-  opacity: 1;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .mobil {
