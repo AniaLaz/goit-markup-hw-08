@@ -91,10 +91,14 @@
 .mob-contact__our.tel {
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
+    @include mobile {
+        font-size: 34px;
+    }
 }
 
 .mob-contact__our.mail {
@@ -117,7 +121,8 @@
 
 .social-networks {
     display: flex;
-}
+    flex-wrap: wrap;
+   }
 
 .social-networks__item {
     padding: 0 10px;
