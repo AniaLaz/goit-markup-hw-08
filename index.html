@@ -186,7 +186,8 @@
                 <h2 class="we-doing-title  title">Чем мы занимаемся</h2>
                 <ul class="list we-doing-list ">
                     <li class="we-doing-item">
-                        <img src="./imeges/code.jpg" alt="вёрстка" width="370" />
+                        <img srcset="./imeges/code.jpg 1x, ./imeges/code-2x.jpg 2x" src="./imeges/code.jpg"
+                            alt="вёрстка" width="370" />
                         <p class="we-doing-img-title">Десктопные приложения</p>
 
                     </li>
@@ -207,7 +208,14 @@
                 <h2 class="team-title title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-item">
-                        <img src="./imeges/igor.jpg" alt="Игорь Демьяненко" class="team-img" width="270" />
+                        <picture>
+                            <source srcset="./imeges/igor.jpg 1x, ./imeges/igor-2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./imeges/igor-tabl.jpg 1x, ./imeges/igor-tabl-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./imeges/igor-mob.jpg 1x, ./imeges/igor-mob-2x.jpg 2x"
+                                media="(min-width: 480px)">
+                            <img src="./imeges/igor-mob.jpg" alt="Игорь Демьяненко" class="team-img" width="450" />
+                        </picture>
                         <div class="team-name">
                             <h3 class="team-post-title">Игорь Демьяненко</h3>
                             <p lang="en" class="team-text">Product Designer</p>
@@ -247,7 +255,15 @@
                     </li>
 
                     <li class="team-item">
-                        <img src="./imeges/olga.jpg" alt="Ольга Репина" class="team-img" width="270" />
+                        <picture>
+                            <source srcset="./imeges/olga.jpg 1x, ./imeges/olga-2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./imeges/olga-tabl.jpg 1x, ./imeges/olga-tabl-2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./imeges/olga-mob.jpg 1x, ./imeges/olga-mob-2x.jpg 2x"
+                                media="(min-width: 480px)">
+                            <img src="./imeges/olga-mob.jpg" alt="Ольга Репина" class="team-img" width="450" />
+                        </picture>
+                       
                         <div class="team-name">
                             <h3 class="team-post-title">Ольга Репина</h3>
                             <p lang="en" class="team-text">Frontend Developer</p>
@@ -286,7 +302,12 @@
                     </li>
 
                     <li class="team-item">
-                        <img src="./imeges/nikoly.jpg" alt="Николай Тарасов" class="team-img" width="270" />
+                                <picture>
+                                    <source srcset="./imeges/nikoly.jpg 1x, ./imeges/nikoly-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./imeges/nikoly-tabl.jpg 1x, ./imeges/nikoly-tabl-2x.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./imeges/nikoly-mob.jpg 1x, ./imeges/nikoly-mob-2x.jpg 2x" media="(min-width: 480px)">
+                                    <img src="./imeges/nikoly-mob.jpg" alt="Николай Тарасов" class="team-img" width="450" />
+                                </picture>
                         <div class="team-name">
                             <h3 class="team-post-title">Николай Тарасов</h3>
                             <p lang="en" class="team-text">Marketing</p>
@@ -325,7 +346,14 @@
                     </li>
 
                     <li class="team-item">
-                        <img src="./imeges/mihail.jpg" alt="Михаил Ермаков" class="team-img" width="270" />
+        <picture>
+            <source srcset="./imeges/mihail.jpg 1x, ./imeges/mihail-2x.jpg 2x" media="(min-width: 1200px)">
+            <source srcset="./imeges/mihail-tabl.jpg 1x, ./imeges/mihail-tabl-2x.jpg 2x" media="(min-width: 768px)">
+            <source srcset="./imeges/mihail-mob.jpg 1x, ./imeges/mihail-mob-2x.jpg 2x" media="(min-width: 480px)">
+            <img src="./imeges/mihail-mob.jpg" alt="Михаил Ермаков" class="team-img" width="450" />
+        </picture>
+
+                        
                         <div class="team-name">
                             <h3 class="team-post-title">Михаил Ермаков</h3>
                             <p lang="en" class="team-text">UI Designer</p>
