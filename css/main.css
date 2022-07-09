@@ -1175,12 +1175,20 @@ img {
   opacity: 1;
   padding-top: 21px;
   padding-right: 21px;
+  padding-bottom: 21px;
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .mobil {
     display: none;
   }
+}
+
+.mobil-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .mobil.is-hidden {
@@ -1202,7 +1210,7 @@ img {
 }
 
 .mob-menu {
-  margin-bottom: 302px;
+  margin-bottom: 100px;
 }
 
 .mob-menu__link {
