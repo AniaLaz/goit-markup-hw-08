@@ -30,7 +30,7 @@
     @include tablet {
         display: block;
         margin-left: auto;
-        padding: 21px 0;
+        // padding: 21px 0;
 
     }
 
@@ -64,6 +64,7 @@
     @include tablet {
         margin-right: 0;
         margin-bottom: 10px;
+        
     }
 
     @include desktop {
@@ -72,6 +73,20 @@
     }
 }
 
+.contact__our.contact__our-top {
+    padding-top: 21px;
+    @include desktop {
+        padding-top: 0;
+    }
+}
+
+.contact__our.contact__our-bottom {
+    padding-bottom: 21px;
+    @include desktop {
+            padding-bottom: 0;
+        }
+
+}
 
 .menu__link:hover,
 .menu__link:focus,
@@ -141,9 +156,14 @@
     margin-left: auto;
     background-color: transparent;
     border: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include tablet{
         display: none;
     }
+&:hover, &:focus {
+    fill: var(--accent-color);
+}
+
 }
 

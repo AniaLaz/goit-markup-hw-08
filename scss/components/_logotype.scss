@@ -19,7 +19,10 @@
 }
 
 .nav__logo {
-    margin-right: 93px;
+    @include tablet {
+            margin-right: 93px;
+        }
+  
 }
 
 .logo__accent-header {
