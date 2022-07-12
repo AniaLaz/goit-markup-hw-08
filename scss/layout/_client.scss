@@ -1,10 +1,18 @@
 .client {
     padding-top: 60px;
     padding-bottom: 60px;
+
+        @include desktop {
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
 }
 
 .client-title {
     margin-bottom: 30px;
+        @include desktop {
+         margin-bottom: 50px;
+            }
 }
 
 .client-list {

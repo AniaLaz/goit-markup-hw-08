@@ -84,12 +84,16 @@
 
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--second-title-color);
+
+    @include mobile {
+        font-size: 20px;
+    }
 }
 
 .modal-input {
@@ -180,17 +184,25 @@
 
 
 .check-label {
-    display: flex;
+    display: inline-block;
     align-items: center;
     justify-content: center;
 
     font-family: 'Roboto';
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 1.17;
+    
+
 
     color: var(--text-color);
+
+    @include desktop {
+        
+        font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+    }
 
 }
 
@@ -248,6 +260,7 @@
 
 .box-icon {
     display: inline-block;
+    box-sizing: border-box;
     width: 15px;
     height: 15px;
 

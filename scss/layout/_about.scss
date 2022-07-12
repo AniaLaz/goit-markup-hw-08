@@ -1,6 +1,10 @@
 .about {
     padding-top: 60px;
     padding-bottom: 60px;
+        @include desktop {
+                padding-top: 94px;
+                padding-bottom: 94px;
+            }
 
 }
 
@@ -11,6 +15,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+
 }
 
 .about__item {
@@ -39,6 +45,9 @@
     text-transform: uppercase;
 
     color: var(--second-title-color);
+        @include desktop {
+               text-align: left;
+            }
 }
 
 .about__text {

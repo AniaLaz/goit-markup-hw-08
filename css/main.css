@@ -203,7 +203,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contact__our.contact__our-top {
-    padding-top: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -212,7 +213,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contact__our.contact__our-bottom {
-    padding-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -336,12 +338,17 @@ img {
   margin-right: auto;
   font-family: "Roboto", san-serif;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-second-color);
+}
+@media screen and (min-width: 480px) {
+  .hero-title {
+    font-size: 26px;
+  }
 }
 @media screen and (min-width: 1200px) and (min-width: 1200px) {
   .hero-title {
@@ -369,6 +376,12 @@ img {
 .about {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .about__list {
@@ -399,6 +412,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-title-color);
+}
+@media screen and (min-width: 1200px) {
+  .about__title {
+    text-align: left;
+  }
 }
 
 .about__text {
@@ -470,6 +488,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .team-name {
   padding: 30px 0;
@@ -530,6 +554,11 @@ img {
 .team-title {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .team-title {
+    margin-bottom: 50px;
+  }
+}
 
 .masters-soc-link {
   display: flex;
@@ -562,9 +591,20 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .client-title {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .client-title {
+    margin-bottom: 50px;
+  }
 }
 
 .client-list {
@@ -628,10 +668,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .address-join {
-    padding-right: 0;
-    padding-left: 0;
+    padding: 0;
+    margin-bottom: 0;
     width: 507px;
-    align-items: flex-start;
+    align-items: baseline;
   }
 }
 
@@ -708,12 +748,12 @@ img {
 
 .footer-join {
   text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-join {
     text-align: left;
     margin-bottom: 0;
-    padding-top: 15px;
   }
 }
 
@@ -762,7 +802,6 @@ img {
 .join-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .join-list {
@@ -775,7 +814,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    padding-top: 12px;
     margin-left: 93px;
     text-align: left;
     justify-content: space-between;
@@ -809,7 +847,7 @@ img {
 }
 
 .subscribe-email-input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -835,6 +873,11 @@ img {
 }
 .subscribe-label:focus-within > .subscribe-email-input {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .subscribe-email-input {
+    width: 358px;
+  }
 }
 
 .subscribe-button {
@@ -874,6 +917,12 @@ img {
 
 .portfolio {
   padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-list {
@@ -958,7 +1007,6 @@ img {
 @media screen and (min-width: 768px) {
   .gallery-name {
     flex-grow: 1;
-    width: 100%;
   }
 }
 
@@ -993,7 +1041,7 @@ img {
 @media screen and (min-width: 768px) {
   .gallery-item-link {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     height: 100%;
   }
 }
@@ -1103,11 +1151,16 @@ img {
 .modal-title {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+}
+@media screen and (min-width: 480px) {
+  .modal-title {
+    font-size: 20px;
+  }
 }
 
 .modal-input {
@@ -1178,15 +1231,21 @@ img {
 }
 
 .check-label {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.17;
   color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .check-label {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .box-good {
@@ -1235,6 +1294,7 @@ img {
 
 .box-icon {
   display: inline-block;
+  box-sizing: border-box;
   width: 15px;
   height: 15px;
   border-radius: 2px;
@@ -1266,6 +1326,7 @@ img {
   padding-top: 21px;
   padding-right: 21px;
   padding-bottom: 48px;
+  padding-left: 40px;
   z-index: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1300,12 +1361,8 @@ img {
   fill: var(--accent-color);
 }
 
-.mobil-container {
-  padding-left: 40px;
-}
-
-.mob-menu {
-  margin-bottom: 100px;
+.mobil-nav {
+  margin-bottom: 80px;
 }
 
 .mob-menu__link {

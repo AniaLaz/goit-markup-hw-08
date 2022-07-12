@@ -4,8 +4,6 @@
     padding-bottom: 60px;
 
     background: var(--background-accent-color);
-
-
 }
 
 .address-join {
@@ -22,10 +20,10 @@
 
 
     @include desktop {
-        padding-right: 0;
-        padding-left: 0;
+        padding: 0;
+        margin-bottom: 0;
         width: 507px;
-        align-items: flex-start;
+        align-items: baseline;
     }
 }
 
@@ -111,11 +109,12 @@
 .footer-join {
 
     text-align: center;
+    margin-bottom: 60px;
 
     @include desktop {
         text-align: left;
         margin-bottom: 0;
-        padding-top: 15px;
+        // padding-top: 15px;
     }
 
 }
@@ -176,7 +175,7 @@
 .join-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    
 
     @include tablet {
         margin-bottom: 0;
@@ -190,7 +189,7 @@
  
 
     @include desktop {
-        padding-top: 12px;
+        // padding-top: 12px;
         margin-left: 93px;
         text-align: left;
         justify-content: space-between;
@@ -227,7 +226,7 @@
 }
 
 .subscribe-email-input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -256,6 +255,11 @@
     .subscribe-label:focus-within>& {
         border-color: var(--accent-color);
     }
+
+
+          @include tablet {
+              width: 358px;
+          }
 
 }
 
