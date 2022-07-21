@@ -228,6 +228,7 @@ img {
 .contact__our {
   display: flex;
   padding: 32px 0;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -655,6 +656,7 @@ img {
 
 .address-join {
   display: block;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .address-join {
@@ -662,7 +664,6 @@ img {
     width: 100%;
     padding-right: 89px;
     padding-left: 76px;
-    margin-bottom: 60px;
     align-items: center;
   }
 }
@@ -689,7 +690,7 @@ img {
   .logo-address {
     min-width: 231px;
     text-align: left;
-    margin-right: 70px;
+    margin-right: 0;
     margin-bottom: 0;
   }
 }
@@ -748,12 +749,12 @@ img {
 
 .footer-join {
   text-align: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-join {
     text-align: left;
     margin-bottom: 0;
+    margin-left: 70px;
   }
 }
 
@@ -814,7 +815,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscribe {
-    margin-left: 93px;
+    margin-left: auto;
     text-align: left;
     justify-content: space-between;
   }
